@@ -1,23 +1,10 @@
-import { useEffect, useState } from 'react';
-import GetPokemon from './GetPokemon';
-
-export default async function Card() {
-  const [pokemon, setPokemon] = useState([]);
-
-  useEffect(() => {
-    (async () => {
-      const poke = await GetPokemon();
-
-      setPokemon(poke);
-    })();
-  }, []);
-
-  console.log(pokemon);
-
+export default function Card({ key, pokemon }) {
+  // console.log('hi Im in card');
+  console.log('pokemon name for card: ', pokemon.name);
   return (
     <div>
-      <img src="" alt="" />
-      <p>Description</p>
+      <p>{pokemon.name}</p>
+      <img src={pokemon.sprites.other.dream_world.front_default} alt="" />
     </div>
   );
 }
