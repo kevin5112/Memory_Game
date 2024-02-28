@@ -9,6 +9,7 @@ export const getPokemon = async (setPokemonList, setIsLoading) => {
   const temp = await fetch('https://pokeapi.co/api/v2/pokemon/1');
   const temp2 = await fetch('https://pokeapi.co/api/v2/pokemon/4');
   const temp3 = await fetch('https://pokeapi.co/api/v2/pokemon/7');
+  const temp4 = await fetch('https://pokeapi.co/api/v2/pokemon/10');
 
   if (temp.ok) {
     console.log('success');
@@ -16,6 +17,7 @@ export const getPokemon = async (setPokemonList, setIsLoading) => {
     resObj.push(await temp.json());
     resObj.push(await temp2.json());
     resObj.push(await temp3.json());
+    resObj.push(await temp4.json());
     // const data = await res.json();
     // setPokemon({
     //   name: data.name,

@@ -14,7 +14,7 @@ function App() {
 
   return (
     <>
-      <h1 className="text-3xl">hello world</h1>
+      <h1 className="text-3xl p-10">hello world</h1>
       <ul className="flex flex-row gap-20">
         {pokemonList.map((pokemon) => {
           return <Card key={pokemon.id} pokemon={pokemon} />;
