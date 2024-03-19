@@ -1,15 +1,13 @@
-export const getPokemon = async (setPokemonList, setIsLoading) => {
+export const getPokemon = async (setPokemonList, setIsLoading, idList) => {
   console.log('fetching pokemon list...');
   setIsLoading(true);
 
   const url = 'https://pokeapi.co/api/v2/pokemon/';
 
   const newResObj = [];
-  const idList1 = [1, 4, 7, 10];
-  const idList2 = [23, 65, 43, 5, 301, 69];
 
   await Promise.all(
-    idList2.map(async (id) => {
+    idList.map(async (id) => {
       newResObj.push(await fetch(url + id));
     })
   );
