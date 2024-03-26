@@ -1,8 +1,7 @@
-# React + Vite
+# PokeMatch
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Small game made to test your memory. Click on each unique pokemon and don't press on one that you've already pressed before, or else that's game over.
 
-Currently, two official plugins are available:
+Project is made in React and Vite while using TailwindCSS for the styling. Helped me learn a lot of how to manage states and effects in React as well as using Vites build system to test and run the project locally.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Visit the game at [PokeMatch](https://kvchen-pokematch.netlify.com)
