@@ -102,16 +102,16 @@ export default function PlayGame() {
 
   return (
     <>
-      <div className="peer absolute top-8 left-8 z-50 hover:scale-110 duration-300 hover:cursor-pointer">
+      <div className="peer absolute sm:top-8 sm:left-8 top-4 left-3 z-50 hover:scale-110 duration-300 hover:cursor-pointer">
         <FontAwesomeIcon
-          className="h-8 w-8 bg-slate-500 rounded-full p-2"
+          className="md:h-8 md:w-8 h-4 w-4 bg-slate-500 rounded-full p-2"
           icon="fa-solid fa-question"
         />
       </div>
       <div className="absolute top-0 left-0 w-screen h-screen peer-hover:bg-black/80 bg-black/0 peer-hover:opacity-100 opacity-0 pointer-events-none cursor-default transition-all duration-300 bg-slate-800">
         <div className="box-border absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 break-normal bg-white text-black rounded-md p-10 opacity-100 z-50 outline outline-2 outline-yellow-300 outline-offset-[-5px]">
-          <h3 className="text-4xl font-bold pb-3">How to play?</h3>
-          <p className="text-2xl">
+          <h3 className="sm:text-4xl font-bold pb-3 text-base">How to play?</h3>
+          <p className="sm:text-2xl text-sm">
             In each level, the number of cards will increase by 2. You can only
             click on the same card once, and once you click it, the cards will
             randomly shuffle. Then, you will continue clicking the cards that
