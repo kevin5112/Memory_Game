@@ -123,7 +123,9 @@ export default function PlayGame() {
       <span className="font-tektur text-6xl text-red-600 font-medium">
         Poke
       </span>
-      <span className="font-tektur text-6xl text-white font-medium">Match</span>
+      <span className="font-tektur text-6xl text-white font-medium">
+        Memory
+      </span>
       <div className="flex flex-row gap-5 justify-center pt-5 pb-16">
         <h2 className="font-tektur text-3xl text-slate-700 font-medium">
           Level: {level + 1}/{maxLevel}
